@@ -9,5 +9,5 @@ ARG username=Sreekanth
 ENV username=$username
 ARG ${username:-some_user}
 
-RUN echo "Hello User: ${username}" > /tmp/devops.txt
+RUN echo "Hello: ${username}" > /tmp/devops.txt
 CMD [ "sleep", "100" ]
